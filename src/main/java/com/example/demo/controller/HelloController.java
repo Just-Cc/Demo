@@ -50,9 +50,4 @@ public class HelloController {
 		return result;
 	}
 
-	@GetMapping("updateAddressById")
-	public String updateAddressById(String address,String id) {
-		System.out.println("id:"+id);
-		return null;
-	}
 }
