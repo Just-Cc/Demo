@@ -49,5 +49,8 @@ public class HelloController {
 		}
 		return result;
 	}
-
+	
+	public void printTest(String s){
+		System.out.println(s);	
+	}
 }
