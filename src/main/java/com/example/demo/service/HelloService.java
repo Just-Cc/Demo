@@ -9,4 +9,6 @@ public interface HelloService {
 	Student findById(Integer id);
 	
 	String updateNameById(String name,String id);
+
+    void insertStudent(Student student);
 }

@@ -37,4 +37,10 @@ public class HelloServiceImpl implements HelloService{
 		}
 	}
 
+	@Override
+	public void insertStudent(Student student) {
+		student.setId(mapper.findMaxId());
+		mapper.insertStudent(student);
+	}
+
 }

@@ -13,4 +13,8 @@ public interface StudentMapper {
 	public Student findByName(String name);
 	
 	public void updateNameById(String name,Integer id);
+
+	public void insertStudent(Student student);
+
+	public Integer findMaxId();
 }

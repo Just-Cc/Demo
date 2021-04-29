@@ -15,4 +15,12 @@
 	<update id="updateNameById">
 		UPDATE STUDENT SET NAME = #{name} WHERE ID = #{id}
 	</update>
+
+	<insert id="insertStudent">
+		INSERT INTO STUDENT VALUES
+	</insert>
+
+	<select id="findMaxId" resultType="Integer">
+		select MAX(ID) FROM STUDENT
+	</select>
 </mapper>

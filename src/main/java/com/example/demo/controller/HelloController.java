@@ -38,4 +38,21 @@ public class HelloController {
 		System.out.println("id:"+id);
 		return helloService.updateNameById(name,id);
 	}
+
+	@GetMapping("insertStudent")
+	public String insertStudent(Student student){
+		String result = new String("成功");
+		try{
+			helloService.insertStudent(student);
+		}catch (Exception e){
+			result = "失败";
+		}
+		return result;
+	}
+
+	@GetMapping("updateAddressById")
+	public String updateAddressById(String address,String id) {
+		System.out.println("id:"+id);
+		return null;
+	}
 }
