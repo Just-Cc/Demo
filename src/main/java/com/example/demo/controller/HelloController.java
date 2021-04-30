@@ -51,6 +51,7 @@ public class HelloController {
 	}
 	
 	public void printTest(String s){
+		System.out.println("sssss");
 		System.out.println(s);	
 	}
 }
